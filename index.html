@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Profile Settings</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-white py-3 shadow-sm" height="100vh">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: hsl(79, 72%, 45%);">Youfit.</a>
+        </div>
+    </nav>
+    <div class="blank"></div>
+    <div class="main_container">
+        <div class="pic_name">
+            <img src="scss/Images/me.png" alt="">
+            <div><input id="addPP" type="file"></input></div>
+        </div>
+        <div class="vr_line"></div>
+        <div class="user_details">
+            <h3>Profile Settings</h3>
+            <div class="input_box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="input_box">
+                <span class="details">Username</span>
+                <input type="text" placeholder="Enter your username">
+            </div>
+            <div class="input_box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input_box">
+                <span class="details">Password</span>
+                <input type="text" placeholder="Enter your password">
+            </div>
+            <div class="input_box">
+                <span class="details">Bio</span>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Write your bio"></textarea>
+            </div>
+            <div class="input_box">
+                <span class="details">Confirm Password</span>
+                <input type="text" placeholder="Confirm your password">
+            </div>
+        </div>
+        <div class="gender_details">
+            <h3 class="gender_title">Gender</h3>
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <div class="category">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                    <spam class="gender">Male</spam>
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                    <spam class="gender">Female</spam>
+                </label>
+            </div>
+        </div>
+        <div class="button">
+            <input type="button" value="Save Settings">
+        </div>
+    </div>
+</body>
+</html>
